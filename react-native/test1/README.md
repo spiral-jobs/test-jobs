@@ -7,3 +7,7 @@ Build an App with following Modules:
 - Every menu item needs to pre-cache an website use any example: github.com, google.com etc.
 - Every menu item when i tap the page doesnt need to load it's instant there
 - Make sure the pages gonna keep updated even if the app is background
+
+## Submit Test
+Please follow git-flow pricipals for commit's and push. 
+When you submit pls. transfer the ownership of your repository to **spiral-jobs**, thanks.

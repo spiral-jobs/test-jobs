@@ -7,6 +7,10 @@ Build an App with following Modules:
 - proxy adapter should be easy to change
 - the proxy should support:
     - socks5
-    - http/s 
+    - http/s
 - make sure all settings can be saved and get from the app
-- have a speedtest for the proxies 
+- have a speedtest for the proxies
+
+## Submit Test
+Please follow git-flow pricipals for commit's and push. 
+When you submit pls. transfer the ownership of your repository to **spiral-jobs**, thanks.
