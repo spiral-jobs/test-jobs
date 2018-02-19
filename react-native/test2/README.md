@@ -10,6 +10,7 @@ Build an App with following Modules:
     - http/s
 - make sure all settings can be saved and get from the app
 - have a speedtest for the proxies
+- feel free to use any free proxy provider 
 
 ## Submit Test
 Please follow git-flow pricipals for commit's and push. 
