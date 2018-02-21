@@ -13,5 +13,4 @@ Build an App with following Modules:
 - feel free to use any free proxy provider 
 
 ## Submit Test
-Please follow git-flow pricipals for commit's and push. 
-When you submit pls. transfer the ownership of your repository to **spiral-jobs**, thanks.
+Please follow git-flow principals for commit's and push.

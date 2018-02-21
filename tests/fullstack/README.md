@@ -17,4 +17,4 @@ Build an App with following Modules:
     - Document everything inside of the README.md
 
 ## Submit Test
-Please follow git-flow pricipals for commit's and push.
+Please follow git-flow principals for commit's and push.
