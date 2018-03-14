@@ -12,9 +12,14 @@ Build an App with following Modules:
     - it should be PWA standard
     - should reach lighthouse score of 80
     - Mobile friendly
+    - Push Notification 
+    - Wrappable into a Native App
 - Deployment
     - Build an automation to deploy and run the App
     - Document everything inside of the README.md
+- Testing
+    - Backend fully tested with an code coverage of 80%
+    - Frontend fully tested with an code coverage of 80%
 
 ## Submit Test
 Please follow git-flow principals for commit's and push.
