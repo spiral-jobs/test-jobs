@@ -14,6 +14,10 @@ Build an App with following Modules:
     - Mobile friendly
     - Push Notification 
     - Wrappable into a Native App
+- Backend
+    - Use GraphQL for the API 
+    - OAuth authentification
+    - JWT Authorization
 - Deployment
     - Build an automation to deploy and run the App
     - Document everything inside of the README.md
