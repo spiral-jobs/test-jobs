@@ -18,6 +18,9 @@ Build an App with following Modules:
     - Use GraphQL for the API 
     - OAuth authentification
     - JWT Authorization
+- Server
+    - Docker setup
+    - create docker-compose to orchestrate your environment 
 - Deployment
     - Build an automation to deploy and run the App
     - Document everything inside of the README.md
