@@ -1,6 +1,7 @@
 const chalk = require('chalk');
 
 function handleError (err, req, res, next) {
+  console.log(err);
   if (!err) {
     console.log('not err');
     next();
@@ -19,6 +20,7 @@ function handleError (err, req, res, next) {
 
 function boomError (err, req, res, next) {
   if (err.isBoom) {
+    console.log(err);
     // return res.status(err.output.statusCode).json(err.output.payload);
     err.error = err.output.payload.error;
     err.statusCode = err.output.payload.statusCode;
