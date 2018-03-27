@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-sm-12 col-md-6 offset-md-3>
+        <home-landing-page></home-landing-page>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-sm-12 col-md-6 offset-md-3>
+        <ion-row>
+          <button ion-button block color="primary" (click)="onSignIn()">Sign In</button>
+          <button ion-button block color="secondary" (click)="onSignUp()">Sign Up</button>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>© 2018 My Blog</ion-title>
+  </ion-toolbar>
+</ion-footer>

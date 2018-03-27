@@ -1,0 +1,4 @@
+<button (click)="onClick($event)" ion-button block [color]="buttonColor" [disabled]="isLoading">
+  <p *ngIf="isLoading"><ion-spinner name="bubbles" color="white"></ion-spinner></p>
+  <p *ngIf="!isLoading">{{ text }}</p>
+</button>
