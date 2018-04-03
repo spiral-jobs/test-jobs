@@ -2,6 +2,9 @@
 
 ## Test
 
+You don't have todo all points, just make an working MVP, this are just 
+criteria's for the test.
+
 Build an App with following Modules:
 - Backend
     - Use PHP/NodeJS/Python/GoLang
