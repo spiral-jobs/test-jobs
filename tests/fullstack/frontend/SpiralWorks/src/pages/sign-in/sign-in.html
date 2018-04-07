@@ -14,25 +14,33 @@
   
   
   <ion-content padding>
-    <ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-sm-12 col-md-4 offset-md-4>
+          <form [formGroup]="signinForm">
+            <ion-list>
   
-      <ion-item>
-        <ion-label floating>Username</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label floating>Password</ion-label>
-        <ion-input type="password"></ion-input>
-      </ion-item>
-    
-    </ion-list>
-
-    <button-custom
-      text="Sign In"
-      buttonColor="secondary"
-      [isLoading]="isLoading"
-      (click)="onClick()"
-    ></button-custom>
+              <ion-item>
+                <ion-label floating>Email Or Phone Number</ion-label>
+                <ion-input formControlName="loginName" type="text"></ion-input>
+              </ion-item>
+            
+              <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input formControlName="password" type="password"></ion-input>
+              </ion-item>
+            
+            </ion-list>
+          </form>
+      
+          <button-custom
+            text="Sign In"
+            buttonColor="secondary"
+            [isLoading]="isLoading"
+            (click)="onClick()"
+          ></button-custom>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   
   </ion-content>

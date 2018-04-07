@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar color="primary" hideBackButton="true">
     <ion-title>
       Home
     </ion-title>
@@ -9,16 +9,21 @@
 <ion-content padding>
   <ion-grid>
     <ion-row>
-      <ion-col col-sm-12 col-md-6 offset-md-3>
+      <ion-col col-sm-12 col-md-4 offset-md-4>
         <home-landing-page></home-landing-page>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col col-sm-12 col-md-6 offset-md-3>
+    <ion-row *ngIf="!session">
+      <ion-col col-sm-12 col-md-4 offset-md-4>
         <ion-row>
           <button ion-button block color="primary" (click)="onSignIn()">Sign In</button>
           <button ion-button block color="secondary" (click)="onSignUp()">Sign Up</button>
         </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="session">
+      <ion-col col-sm-12 col-md-4 offset-md-4>
+        <button ion-button block color="primary" (click)="goToPosts()">Go to Posts</button>
       </ion-col>
     </ion-row>
   </ion-grid>

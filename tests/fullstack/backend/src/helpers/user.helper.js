@@ -47,15 +47,13 @@ async function FindUser () {
   if (arguments.length === 1 && typeof arguments[0] === 'number') {
     return getUserById(arguments[0]);
   }
-  else if (arguments.length === 0) {
+  else {
     return getAllUser();
   }
 }
 
 async function CreateUser () {
-  if (arguments.length === 1 && typeof arguments[0] === 'object') {
-    return createUserByInput(arguments[0]);
-  }
+  return createUserByInput(arguments[0]);
 }
 module.exports = {
   FindUser,

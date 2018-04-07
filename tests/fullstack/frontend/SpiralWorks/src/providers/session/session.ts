@@ -39,6 +39,11 @@ export class SessionProvider {
     .map(data => this.GetData(data))
   }
 
+  SignOut () {
+    localStorage.clear();
+    return Promise.resolve();
+  }
+
   GetData (data) {
     return data.data;
   }

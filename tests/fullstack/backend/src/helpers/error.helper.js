@@ -10,7 +10,7 @@ const clientError = (message, status = 400) => {
   err.error = 'Client Error';
   err.statusCode = status;
   return err;
-}
+};
 
 module.exports = {
   serverError: serverError,
