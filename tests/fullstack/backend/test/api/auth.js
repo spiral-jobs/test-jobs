@@ -50,8 +50,8 @@ describe('Auth Api', () => {
       Sinon.stub(UserHelper, 'FindUser').returns(Promise.reject('some error'));
       Sinon.stub(JwtService, 'tokenForUser').returns('some token');
       Auth.SignIn(request, response, (err) => {
-        Code.expect(err).not.equal(null);
-        Code.expect(err.Error).equal('some error');
+        Chai.expect(err).not.equal(null);
+        Chai.expect(err.Error).equal('some error');
       })
       .catch(() => {
         done();
@@ -80,7 +80,7 @@ describe('Auth Api', () => {
     it('Returns an error', (done) => {
       Sinon.stub(UserHelper, 'CreateUser').returns(Promise.reject('some error'));
       Auth.SignUp(request, response, (err) => {
-        Code.expect(err.statusCode).equal(500);
+        Chai.expect(err.statusChai).equal(500);
         done();
       })
       .catch((err) => {
@@ -91,7 +91,7 @@ describe('Auth Api', () => {
     it('Returns a null user', (done) => {
       Sinon.stub(UserHelper, 'CreateUser').returns(Promise.resolve(null));
       Auth.SignUp(request, response, (err) => {
-        Chai.expect(err.statusCode).equals(422);
+        Chai.expect(err.statusChai).equals(422);
         done();
       })
       .catch((err) => {
