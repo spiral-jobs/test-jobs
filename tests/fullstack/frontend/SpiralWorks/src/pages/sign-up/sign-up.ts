@@ -36,7 +36,7 @@ export class SignUpPage implements OnInit, OnDestroy {
   public isLoading: boolean = false;
   public signupForm: FormGroup;
   private signupSubscription: Subscription = null;
-  private session: ISession = JSON.parse(localStorage.getItem('session'));
+  private session: ISession = this.sessionProvider.GetCredentials();
 
   ngOnInit () {
     this.signupForm = this.formBuilder.group({
@@ -54,7 +54,7 @@ export class SignUpPage implements OnInit, OnDestroy {
   }
 
   ionViewCanEnter(): boolean{
-    if (this.session && this.session.token) {
+    if (this.session) {
       this.navCtrl.push('posts');
       return false;
     } else {

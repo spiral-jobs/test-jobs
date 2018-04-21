@@ -18,20 +18,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'posts.html',
 })
 export class PostsPage {
-  private session: ISession = JSON.parse(localStorage.getItem('session'));
+
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
     public sessionProvider: SessionProvider
   ) {
   }
+  private session: ISession = this.sessionProvider.GetCredentials();
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PostsPage');
   }
 
   ionViewCanEnter(): boolean{
-    if (this.session && this.session.token) {
+    if (this.session) {
       return true;
     } else {
       this.navCtrl.push('home');
