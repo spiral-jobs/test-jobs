@@ -51,8 +51,9 @@ export class SignInPage implements OnInit, OnDestroy {
   }
 
   ionViewCanEnter(): boolean{
-    if (this.session && this.session.token) {
+    if (this.session) {
       this.navCtrl.push('posts');
+      return false;
     } else {
       return true;
     }

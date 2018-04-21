@@ -47,4 +47,8 @@ export class SessionProvider {
   GetData (data) {
     return data.data;
   }
+
+  GetCredentials (): ISession {
+    return JSON.parse(localStorage.getItem('session'));
+  }
 }

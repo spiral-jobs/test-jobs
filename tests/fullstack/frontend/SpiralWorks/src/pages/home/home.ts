@@ -1,3 +1,4 @@
+import { SessionProvider } from './../../providers/session/session';
 import { ISession } from './../../interfaces/session/session.interface';
 import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
@@ -11,11 +12,12 @@ import { NavController, IonicPage } from 'ionic-angular';
 })
 export class HomePage {
 
-  public session: ISession = JSON.parse(localStorage.getItem('session'));
-  public isSignedIn: boolean = this.session ? true : false;
-  constructor(public navCtrl: NavController) {
+  
+  constructor(public navCtrl: NavController, private sessionProvider: SessionProvider) {
 
   }
+  public session: ISession = this.sessionProvider.GetCredentials();
+  public isSignedIn: boolean = this.session ? true : false;
 
   onSignUp () {
     this.navCtrl.push('signup');
