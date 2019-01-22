@@ -11,7 +11,7 @@ Build an App with following Modules:
     - Boilerplate App (Register, Login, Profile)
     - Register over email / phone number
 - Frontend
-    - Use for the frontend VueJS/React/Angular
+    - Use for the frontend InfernoJS/VueJS/React/Angular
     - it should be PWA standard
     - should reach lighthouse score of 80
     - Mobile friendly
