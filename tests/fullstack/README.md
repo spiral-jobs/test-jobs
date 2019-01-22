@@ -7,7 +7,7 @@ criteria's for the test.
 
 Build an App with following Modules:
 - Backend
-    - Use PHP/NodeJS/Python/GoLang
+    - Use PHP/NodeJS/Python/GoLang/CoreNet
     - Boilerplate App (Register, Login, Profile)
     - Register over email / phone number
 - Frontend
