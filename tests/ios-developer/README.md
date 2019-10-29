@@ -11,7 +11,7 @@ Build an App with following Modules:
 - Increase the speed as much as possible 
 - Make the app CI buildable 
 - Should be easy to configurable via. .env or any configuration 
-- Pls. build the app in Objectiv-C 
+- Pls. build the app in Swift 
 
 ## Submit Test
 Please follow git-flow principals for commit's and push.
