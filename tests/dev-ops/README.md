@@ -5,10 +5,10 @@
 You don't have todo all points, just make an working MVP, this are just 
 criteria's for the test.
 
-1. install and configure Nginx to load balance 2 instances of php-fpm
-2. Install and configure mysql
-3. install and configure questions2answer http://question2answer.org/ using both php-fpm instances
-4. simple flow chart of the setup
+1. create hadoop cluster with docker 
+2. create hive cluster connected to the hadoop cluster
+3. create an init script to fill it with data 
+4. make sure its easy to extend the cluster
 
 OS to be used: Ubuntu 14.04 or Windows Server
 
