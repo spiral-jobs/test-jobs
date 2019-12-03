@@ -1,4 +1,4 @@
-# RnD Developer
+# DevOps Engineer
 
 ### Test
 
@@ -14,3 +14,6 @@ OS to be used: Ubuntu 18.04 or Windows Server
 
 ## Submit Test
 Please follow git-flow principals for commit's and push.
+
+## Result
+Everything should be describe inside of a docker-compose file
