@@ -10,7 +10,7 @@ criteria's for the test.
 3. create an init script to fill it with data 
 4. make sure its easy to extend the cluster
 
-OS to be used: Ubuntu 14.04 or Windows Server
+OS to be used: Ubuntu 18.04 or Windows Server
 
 ## Submit Test
 Please follow git-flow principals for commit's and push.
