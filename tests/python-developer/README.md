@@ -28,7 +28,6 @@ Build an App with following Modules:
     - Document everything inside of the README.md
 - Testing
     - Backend fully tested with an code coverage of 80%
-    - Frontend fully tested with an code coverage of 80%
 
 ## Submit Test
 Please follow git-flow principals for commit's and push.
